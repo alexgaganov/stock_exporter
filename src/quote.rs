@@ -18,8 +18,7 @@ mod tests {
 
     #[test]
     fn parse_quote() {
-        let quote_str = 
-            "{
+        let quote_str = "{
               \"symbol\": \"AAPL\",
               \"companyName\": \"Apple Inc\",
               \"latestPrice\": 137.02,
