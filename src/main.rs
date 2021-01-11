@@ -84,13 +84,13 @@ mod tests {
         let q = Quote {
             symbol: String::from("AAPL"),
             company_name: String::from("Apple Inc"),
-            latest_price: 240.0, 
-            latest_volume: 1060862, 
+            latest_price: 240.0,
+            latest_volume: 1060862,
             market_cap: 7629978361,
         };
 
         publish_metrics(q);
-        
+
         let latest_price = LATEST_PRICE.get_metric_with_label_values(&["AAPL", "Apple Inc"]);
         assert!(latest_price.is_ok());
         assert_eq!(latest_price.unwrap().get(), 240.0);
