@@ -1,6 +1,6 @@
 # stock_exporter
 
-[![Build Status](https://github.com/alexgaganov/stock_exporter/workflows/Rust/badge.svg?branch=master)](https://github.com/alexgaganov/stock_exporter/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/alexgaganov/stock_exporter/workflows/CI/badge.svg?branch=master)](https://github.com/alexgaganov/stock_exporter/actions?query=workflow%3ACI)
 
 Retrieve stock quotes from IEX Cloud API and export them as Prometheus metrics.
 Just learning some Rust. Probably won't be useful for anyone.
