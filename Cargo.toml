@@ -1,0 +1,22 @@
+[package]
+name = "stock_exporter"
+version = "0.1.0"
+authors = ["alexgaganov <alexgaganov@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.0"
+env_logger = "0.8.2"
+prometheus_exporter = "0.8"
+anyhow = "1.0.37"
+clap = "2.33.3"
+rand = "0.8.1"
+lazy_static = "1.4.0"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = "1.0.118"
+serde_derive = "1.0.118"
+serde_json = "1.0.61"
+futures = "0.3.9"
